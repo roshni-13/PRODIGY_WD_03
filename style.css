@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman Georgia Garamond", sans-serif;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #58ab85, #38b50b);
+}
+html {
+    font-size: 14px;
+}
+.wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.container {
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+.button-option {
+    background: #ffffff;
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 7px;
+    font-size: 10vmin;
+    color:rgb(86, 147, 201);
+    box-shadow: 0 0 13px rgpa(0, 0, 0, 0.1);
+}
+#restart {
+    font-size: 1.2rem;
+    padding: 1em;
+    border-radius: 6px;
+    background-color: #cac1e6;
+    color: #100e0e;
+    border: none;
+    position: relative;
+    margin: 1.3rem auto 0 auto;
+    display: block;
+}
+.popup {
+    background: linear-gradient(135deg, #58ab85, #38b50b);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 10vmin;
+}
+#new-game {
+    font-size: 0.7em;
+    padding: o.4em 1em;
+    background-color: rgb(241, 238, 234);
+    border-radius: 0.2em;
+    border: black;
+}
+#message {
+    color: #f6f0f6;
+    text-align: center;
+    font: 1em sans-serif;
+}
+.popup.hide {
+    display: none;
+}
